@@ -76,4 +76,6 @@ const Navbaar = () => {
   );
 };
 
+
+// qwerty
 export default Navbaar;
