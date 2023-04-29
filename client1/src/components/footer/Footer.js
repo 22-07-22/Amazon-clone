@@ -36,11 +36,11 @@ const Footer = () => {
         </div>
       </div>
       <div className="lastdetails">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgs8V0bkWXG2RZQILg7yUEBFaHOGyvYIk6SA&usqp=CAU" alt="logo" />
+        <img style = {{width:150 , height : 55}} src=".\final_logo_black_1.png" alt="logo" />
         <p>
           Conditions of Use & Sale &nbsp; &nbsp;&nbsp; Privacy Notice &nbsp;
           &nbsp;&nbsp; Interest-Based Ads &nbsp; &nbsp;&nbsp; © 1996-{year},
-          Amazon.com, Inc. or its affiliates
+          FarmLink.com, Inc. or its affiliates
         </p>
       </div>
     </footer>

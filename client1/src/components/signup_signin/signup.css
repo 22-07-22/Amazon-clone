@@ -20,7 +20,7 @@ section{
 }
 
 .sign_form{
-    border: 1px solid #c9c9c9;
+    border: 1px solid #88a7b0;
     padding: 10px 30px;
     margin-top: 50px;
     border-radius: 5px;
@@ -44,7 +44,7 @@ section{
     /* padding: 3px 7px; */
     border-radius: 3px;
     outline: none;
-    border:1px solid #a6a6a6;
+    border:1px solid #88a7b0;
     margin-bottom: 10px;
     margin-top: 1px;
 }
@@ -53,14 +53,14 @@ section{
     margin-top: 7px;
     margin-bottom: 23px;
     width: 100%;
-    background: #f3d078;
+    background:#88a7b0;
     cursor: pointer;
-    border:1px solid #9c7e31;
+    border:1px solid #88a7b0;
     height: 29px;
     outline: none;
     border-radius: 3px;
     color: #111;
-    background: linear-gradient(to bottom,#f7dfa5,#f0c14b)
+    /* background: linear-gradient(to bottom,#f7dfa5,#f0c14b) */
 }
 
 .sign_form input:focus{
@@ -95,7 +95,7 @@ section{
 .create_accountinfo p{
     font-size: 12px;
     text-align: center;
-    color: #767676;
+    color:  #88a7b0;
     margin-top: 20px;
     font-weight: 600;
 }
@@ -105,7 +105,7 @@ section{
     height: 29px;
     width: 300px;
     border-radius: 3px;
-    border: 1px solid #adb1b8;
+    border: 1px solid #88a7b0;
     outline: none;
     margin-top: 15px;
 }

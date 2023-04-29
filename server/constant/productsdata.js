@@ -2,89 +2,89 @@ const products = [
     { 
         id: 'product1',
         //link of image
-        url: 'https://rukminim1.flixcart.com/image/150/150/kapoo7k0/electric-kettle/p/6/s/pigeon-favourite-original-imafs7xhj5uwgrh4.jpeg?q=70', 
-        detailUrl: 'https://rukminim1.flixcart.com/image/416/416/kapoo7k0/electric-kettle/p/6/s/pigeon-favourite-original-imafs7xhj5uwgrh4.jpeg?q=70',
+        url: 'https://m.media-amazon.com/images/I/41s78m7dzVL._SY300_SX300_QL70_FMwebp_.jpg', 
+        detailUrl: 'https://m.media-amazon.com/images/I/61dobZ9Br+L._AC_UL600_FMwebp_QL65_.jpg',
         title: {
             //name of images
-            shortTitle: 'Home & Kitchen',
-            longTitle: 'Pigeon FAVOURITE Electric Kettle  (1.5 L, Silver, Black)'
+            shortTitle: 'Fresh Harvest: Potatoes',
+            longTitle: 'JVN Clean and Fresh Vegetable Potatoes -1kg'
         }, 
         price: {
-            mrp: 1195,
-            cost: 625,
-            discount: '47%'
+            mrp: 290,
+            cost: 189,
+            discount: '35%'
         },
-        description: 'This electric kettle from Pigeon will soon become a travelers best friend, a hostelite saviour and an answer to all the midnight cravings. With this handy appliance, you can boil water and use it to make instant noodles, packet soup, coffee and green tea.',
-        discount: 'Extra 10% Off', 
-        tagline: 'Deal of the day' 
+        description: 'High source of fibre. Good source of Vitamin B6, C, Potassium, and Magnesium. Can be used in multiple dishes and snacks. Store at room temperature, away from direct sunlight',
+        discount: 'Extra 5% Off', 
+        tagline: 'Deal of the day'  
     },
     { 
         id: 'product2',
-        url: 'https://rukminim1.flixcart.com/image/416/416/kl6wx3k0/sandwich-maker/8/r/d/sandwich-01-flipkart-smartbuy-original-imagydds4zthxt8z.jpeg?q=70', 
-        detailUrl: 'https://rukminim1.flixcart.com/image/416/416/kl6wx3k0/sandwich-maker/8/r/d/sandwich-01-flipkart-smartbuy-original-imagydds4zthxt8z.jpeg?q=70',
+        url: 'https://m.media-amazon.com/images/I/41zC1OHiFhL._AC_UL600_FMwebp_QL65_.jpg', 
+        detailUrl: 'https://m.media-amazon.com/images/I/41zC1OHiFhL.jpg',
         title: {
-            shortTitle: 'Sandwich Makers',
-            longTitle: 'Flipkart SmartBuy Sandwich 01 Grill  (Black)'
+            shortTitle: 'Fresh Red Onions',
+            longTitle: 'Fresh Red Onion -10Kg'
         },
         price: {
-            mrp: 1499,
-            cost: 899,
-            discount: '40%'
+            mrp: 999,
+            cost: 500,
+            discount: '50%'
         },
-        description: 'This non-stick sandwich toaster .easy to use and very handy. Directly hold over flame to make tasty toasts and toasted sandwiches. Specially designed by keeping your needs in mind, the sandwich maker makes whatever youre doing simpler, smarter and better',
+        description: 'Rich flavour and tasty to your foods. Onion is rich in phytochemicals, Vitamin C and anti-oxidants. It improves body immunity and helps reduce cholesterol. Onions are an essential part of everyday cooking in India. Can be used in curries, snacks and salads and with other foods',
         discount: 'From 99+5% Off', 
-        tagline: 'Pestige, Nova & more' 
+        tagline: 'Various Sizes and Types' 
     },
     { 
         id: 'product3',
-        url: 'https://rukminim1.flixcart.com/image/150/150/kohigsw0/resistance-tube/c/s/e/new-adjustable-single-resistance-tube-multicolor-na-ajro-deal-original-imag2xg88mhmwxz5.jpeg?q=70', 
-        detailUrl: 'https://rukminim1.flixcart.com/image/416/416/kohigsw0/resistance-tube/c/s/e/new-adjustable-single-resistance-tube-multicolor-na-ajro-deal-original-imag2xg88mhmwxz5.jpeg?q=70', 
+        url: 'https://m.media-amazon.com/images/I/61c5jr5SZ-L._AC_UL600_FMwebp_QL65_.jpg', 
+        detailUrl: 'https://m.media-amazon.com/images/I/61c5jr5SZ-L._SX679_.jpg', 
         title: {
-            shortTitle: 'Fitness Gear',
-            longTitle: 'AJRO DEAL New Adjustable Single Resistance Tube (Multicolor) Resistance Tube  (Multicolor)'
+            shortTitle: 'Mix Vegies',
+            longTitle: 'Mix Vegetable Cabbage/Cauliflower/Peas/Carrot each 500gm (2kg)'
         }, 
         price: {
-            mrp: 499,
-            cost: 166,
-            discount: '66%'
+            mrp: 849,
+            cost: 819,
+            discount: '4%'
         },
-        description: 'This unique product can tone your back muscles, reduce belly fat, improve blood circulation and also improves your body posture. It increases the stamina, energy and vitality of the body. The elastic resistance of the rubber training rope can be used to train and exercise in whichever way you want, according to your physical needs.',
-        discount: 'Upto 70% Off', 
+        description: 'The vegetarian products.Mixed vegetables contain several carotenoids: alpha-carotene, beta-carotene, lutein and zeaxanthin. Alpha- and beta-carotene are converted into the form of vitamin A that is essential for vision. Lutein and zeaxanthin function as antioxidants. Vegetables are full of essential vitamins, minerals, and antioxidants that provide many important health benefits to your body.',
+        discount: 'Upto 4% Off', 
         tagline: 'Deal of the Day' 
     },
     { 
         id: 'product4',
-        url: 'https://rukminim1.flixcart.com/image/300/300/kll7bm80/smartwatch/c/1/n/43-mo-sw-sense-500-android-ios-molife-original-imagyzyycnpujyjh.jpeg?q=70', 
-        detailUrl: 'https://rukminim1.flixcart.com/image/416/416/kll7bm80/smartwatch/c/1/n/43-mo-sw-sense-500-android-ios-molife-original-imagyzyycnpujyjh.jpeg?q=70',
+        url: 'https://m.media-amazon.com/images/I/71WRkjNV+NL._AC_UL600_FMwebp_QL65_.jpg', 
+        detailUrl: 'https://m.media-amazon.com/images/I/71WRkjNV+NL._SX679_.jpg',
         title: {
-            shortTitle: 'Smart Watches',
-            longTitle: 'Molife Sense 500 Smartwatch  (Black Strap, Freesize)',
+            shortTitle: 'Grains & Pulses',
+            longTitle: 'More Loose Dhuli Moong Dal (500 g)',
         }, 
         price: {
-            mrp: 6999,
-            cost: 4049,
-            discount: '42%'
+            mrp: 160,
+            cost: 300,
+            discount: '34%'
         },
-        description: 'The Molife Sense 500, a brilliant smartwatch with a beautiful large display. Say hello to the infinity 1.7-inch display with 2.5D curved edges. Thanks to seamless Bluetooth 5.0 connectivity, you wont have to keep waiting. Bring a change to your outfit every day with changeable straps. A splash of color every day keeps the boredom away.',
+        description: 'Contain the natural vegetable protein. 100% natural and hygienically processes. This dal is low in fat, zero cholesterol. Excellent source of protein and fiber',
         discount: 'Grab Now', 
         tagline: 'Best Seller' 
     },
     { 
         id: 'product5',
-        url: 'https://rukminim1.flixcart.com/image/416/416/k3uhhu80/hair-dryer/n/m/t/nova-2800-w-professional-nhp-8220-original-imafmvwfhmzsxdrw.jpeg?q=70',
-        detailUrl: 'https://rukminim1.flixcart.com/image/416/416/k3uhhu80/hair-dryer/n/m/t/nova-2800-w-professional-nhp-8220-original-imafmvwfhmzsxdrw.jpeg?q=70', 
+        url: 'https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQJSAjNtCrpHz6HaaGKIVZ5tosV1R-tqBQ60q26SQd6eo-5V_9ZN9XxkKXIgISzIRIDUnHYpwXV3Eb_WPiPM0HEsOz6v6bghIj8PxYcvDqTOEHdWHIIDQ_1ckQ&usqp=CAE',
+        detailUrl: 'https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQJSAjNtCrpHz6HaaGKIVZ5tosV1R-tqBQ60q26SQd6eo-5V_9ZN9XxkKXIgISzIRIDUnHYpwXV3Eb_WPiPM0HEsOz6v6bghIj8PxYcvDqTOEHdWHIIDQ_1ckQ&usqp=CAE', 
         title: {
-            shortTitle: 'Trimmers, Dryers & more',
-            longTitle: 'Nova Professional NHP 8220 Hair Dryer  (1800 W, Multicolor)'
+            shortTitle: 'Fresh Fruits',
+            longTitle: 'Fresho Banana - Robusta/Paka Kela, 1 kg'
         }, 
         price: {
-            mrp: 1899,
-            cost: 1124,
+            mrp: 49,
+            cost: 81.58,
             discount: '40%'
         },
-        description: '',
-        discount: 'From ₹499', 
-        tagline: 'Kubra, Nova & more' 
+        description: 'Relish the soft, buttery texture of Robusta bananas that are light green and have a great fragrance and taste. The stalks of Robustas are thick and rigid. Fresh fruits are green, which revolve to a bright yellow on ripening and the flesh contains a white - ceramic colour. Fresho Robusta is fine quality, sweet flavoured, mushy and soft bananas.',
+        discount: 'From 20%', 
+        tagline: 'Red banana & more' 
     }
 ]
 

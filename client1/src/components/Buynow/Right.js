@@ -1,4 +1,8 @@
 import {React,useState,useEffect} from "react";
+import { NavLink } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const Right = ({iteam}) => {
 
@@ -8,6 +12,9 @@ const Right = ({iteam}) => {
     totalAmount();
   },[iteam])
 
+
+  // const history = useHistory("");
+
   const totalAmount =()=>{
     let price = 0;
     iteam.map((item)=>{
@@ -16,11 +23,18 @@ const Right = ({iteam}) => {
     setPrice(price)
   }
 
+  const proceesby = ()=>{
+    // alert("Your Order is Confirmed");
+    // history.push("/");
+    toast.success("Your Order is Confirmed",{
+      position: "top-center",
+    })
+}
 
   return (
     <div className="right_buy">
       <img
-        src="https://images-eu.ssl-images-amazon.com/images/G/31/checkout/assets/TM_desktop._CB443006202_.png"
+        src="https://cdn.sanity.io/images/ec9j7ju7/production/e37a8417f49e6b2f502c37266611f3f40a01650d-91x66.svg?auto=format&w=640"
         alt="rightimg"
       />
       <div className="cost_right">
@@ -32,9 +46,11 @@ const Right = ({iteam}) => {
           </span>
         </p>
         <h3>Subtotal ({iteam.length} items): <strong style={{fontWeight:700,color:"#111"}}>₹{price}.00</strong></h3> 
-        <button className="rightbuy_btn">Proceed to Buy</button>
+        <NavLink to = "/"><button className="rightbuy_btn" onClick={proceesby}>Proceed to Buy</button> </NavLink>
+        {/* <button className="rightbuy_btn" onClick={proceesby}>Proceed to Buy</button>  */}
+        
         <div className="emi">
-            EMI available
+          Thank You :)
         </div>
       </div>
     </div>

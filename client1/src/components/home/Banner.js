@@ -2,10 +2,10 @@ import React from 'react'
 import Carousel from 'react-material-ui-carousel'
 import "./banner.css";
 const data = [
-    "https://rukminim1.flixcart.com/flap/1680/280/image/1defb861e409319b.jpg?q=50",
-    " https://rukminim1.flixcart.com/flap/1680/280/image/685712c6cefb3c02.jpg?q=50",
-    "https://rukminim1.flixcart.com/flap/1680/280/image/8d4150cc4f3f967d.jpg?q=50",
-    "https://rukminim1.flixcart.com/flap/1680/280/image/685712c6cefb3c02.jpg?q=50"
+    "https://as1.ftcdn.net/v2/jpg/01/02/67/24/1000_F_102672433_j2KbPbusajfedr8oHNmgQLb9eaFUS7T1.jpg",
+    "https://i.pinimg.com/474x/7b/aa/33/7baa336aa9678133105d2fa6b43bece2.jpg",
+    "https://colorlib.com/wp/wp-content/uploads/sites/2/flower-store-templates.jpg.webp",
+    "https://www.farmigoagrotech.com/images/farmigo/services1.jpg"
 ]
 
 const Banner = () => {

@@ -47,18 +47,18 @@ const Buynow = () => {
                 return (
                   <>
                     <div className="item_containert">
-                      <img src={e.detailUrl} alt="" />
+                      <img src={e.url} alt="item_pic" />
                       <div className="item_details">
                         <h3>{e.title.longTitle}</h3>
                         <h3>{e.title.shortTitle}</h3>
-                        <h3 className="differentprice">₹4000</h3>
-                        <p className="unusuall">Usually dispatched in 8 days</p>
+                        <h3 className="differentprice">₹{e.price.cost}.00</h3>
+                        <p className="unusuall">Usually dispatched in 1 day</p>
                         <p>Eligible for Free Shipping</p>
-                        <img
+                        {/* <img
                           src="https://m.media-amazon.com/images/G/31/marketing/fba/fba-badge_18px-2x._CB485942108_.png"
                           alt="logo"
-                        />
-                        <Option />
+                        /> */}
+                        <Option deletedata={e.id} get= {getdatabuy} />
                       </div>
                       <h3 className="item_price">{e.price.cost}.00</h3>
                     </div>

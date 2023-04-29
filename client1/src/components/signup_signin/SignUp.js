@@ -72,7 +72,7 @@ const SignUp = () => {
         {/* logo */}
         <div className="sign_header">
           {/* <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLeZEZAJmVh3wRYX-mlil2shFa1ZrF_DNcLj1Xj63C&s" alt="signupimg" /> */}
-          <img src="./blacklogoamazon.png" alt="signupimg" />
+          <img style={{marginTop: "10px"}}src=".\final_logo_white_1.png" alt="signupimg" />
         </div>
         <div className="sign_form">
           <form method="POST">

@@ -37,7 +37,7 @@
     cursor: pointer;
 }
 .cart_btn .cart_btn1{
-    background-color:#FFD814;
+    background-color: #88a7b0;
     border: none;
     outline: none;
     border-radius: 20px;
@@ -49,11 +49,11 @@
 }
 
 .cart_btn .cart_btn1:hover{
-    background-color:#f1cc13;
+    background-color: #273f46;
 }
 
 .cart_btn .cart_btn2{
-    background-color: #FFA41C;
+    background-color:  #66797e;
     letter-spacing: .5px;
     font-size: 14px;
     color: #0F1111;
@@ -65,7 +65,7 @@
 }
 
 .cart_btn .cart_btn2:hover{
-    background-color: #ec9615;
+    background-color: #273f46;
 }
 
 .cart_container .right_cart{

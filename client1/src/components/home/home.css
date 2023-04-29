@@ -2,8 +2,10 @@
     width: 100%;
     position: relative;
     top: 60px;
-    background-color: #e7e7e7;
+    /* background-color: #e7e7e7; */
+    background-color: #395B64;
     min-height: calc(100vh - 60px);
-    border-bottom: 2px solid rgb(199, 199, 199);
+    /* border-bottom: 2px solid rgb(199, 199, 199); */
+    border-bottom: 2px solid #21211f;
     margin-bottom: 10px;
 }

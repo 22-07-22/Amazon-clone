@@ -131,7 +131,7 @@
 }
 
 .buynow_container .right_buy .cost_right p{
-    color: #007185;
+    color: #88a7b0;
     font-size: 12px;
     font-weight: 500;
     margin-top: 20px;
@@ -150,19 +150,19 @@
     border-radius: 8px;
     border: none;
     outline: none;
-    background-color:#FFD814;
+    background-color: #88a7b0;
     font-size: 14px;
     cursor: pointer;
     box-shadow: 0 0 10px -5px rgba(0,0,0,.5);
 }
 
 .cost_right .rightbuy_btn:hover{
-    background-color:#f3cc0a;
+    background-color :#88a7b0;
 }
 
 .cost_right .emi{
     padding: 10px;
-    border: 1px solid #ebe8e8;
+    border: 1px solid #88a7b0;
     margin-top: 20px;
     margin-bottom: 10px;
     cursor: pointer;
@@ -183,7 +183,7 @@
 /* empty cart */
 .buynow_container .empty_buy{
     flex: .7;
-    background-color: #fff;
+    background-color:  #88a7b0;
     padding: 10px 20px;
     border-radius: 2px;
     display: flex;

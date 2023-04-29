@@ -3,6 +3,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import "./cart.css";
 import {LoginContext} from "../context/ContextProvider";
+import CircularProgress from '@mui/material/CircularProgress';
 
 const Cart = () => {
   const { id } = useParams("");
@@ -13,7 +14,7 @@ const Cart = () => {
 
   const {account,setAccount} = useContext(LoginContext)
 
-  const [inddata, setInddata] = useState([]);
+  const [inddata, setInddata] = useState("");
 
   console.log(inddata);
 
@@ -36,7 +37,7 @@ const Cart = () => {
   };
 
   useEffect(() => {
-    getinddata();
+    setTimeout( getinddata,1000);
   }, [id]);
 
   //add cart function
@@ -136,6 +137,12 @@ const Cart = () => {
           </div>
         </div>
       )}
+    {
+      !inddata ? <div className="circle">
+        <CircularProgress />
+        <h2>Loading...</h2>
+      </div>: " "
+    }
     </div>
   );
 };

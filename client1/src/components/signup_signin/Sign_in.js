@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useState,useContext } from "react";
 import { NavLink } from "react-router-dom";
 import "./signup.css";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 // routing has to be created for sign up and signin pages
+import { LoginContext } from "../context/ContextProvider";
 
 const Sign_in = () => {
   const [logdata, setData] = useState({
@@ -11,6 +12,8 @@ const Sign_in = () => {
     password: "",
   });
   console.log(logdata);
+
+  const { account, setAccount } = useContext(LoginContext);
 
   const adddata = (e) => {
     const { name, value } = e.target;
@@ -49,6 +52,7 @@ try {
     })
   }else{
     console.log("data valid");
+    setAccount(data)
     toast.success("User Valid",{
       position: "top-center",
     })
@@ -67,12 +71,12 @@ try {
           {/* logo */}
           <div className="sign_header">
             {/* <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLeZEZAJmVh3wRYX-mlil2shFa1ZrF_DNcLj1Xj63C&s" alt="signupimg" /> */}
-            <img src="./blacklogoamazon.png" alt="signupimg" />
+            <img style={{marginTop: "10px"}}src=".\final_logo_white_1.png" alt="signupimg" />
           </div>
           <div className="sign_form">
             <form method="POST">
               <h1>Sign-In</h1>
-              <div className="form_data">
+              <div style={{marginTop:"-10px"}} className="form_data">
                 <label htmlFor="email">Email</label>
                 <input
                   type="text"
@@ -100,9 +104,9 @@ try {
           </div>
           {/* for options below signin  */}
           <div className="create_accountinfo">
-            <p>New To Amazon</p>
+            <p>New To FarmLink</p>
             <NavLink to="/register">
-              <button>Create Your Amazon Account</button>{" "}
+              <button>Create Your FarmLink Account</button>{" "}
             </NavLink>
           </div>
         </div>

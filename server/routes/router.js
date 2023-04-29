@@ -95,7 +95,7 @@ router.post("/login",async(req,res)=>{
             console.log(token);
 
             res.cookie("Amazonweb",token,{
-                expires:new Date(Date.now() + 900000),
+                expires:new Date(Date.now() + 90000000),
                 // cookie expires after 15min
                 httpOnly:true
             })
@@ -152,5 +152,55 @@ router.get("/cartdetails",athenicate,async(req,res)=>{
         console.log("error "+ error)
     }
 })
+
+//get valid user
+
+router.get("/validuser",athenicate,async(req,res)=>{
+    try {
+        const validuserone = await USER.findOne({_id:req.userID});
+        res.status(201).json(validuserone);
+    } catch (error) {
+        console.log("error "+ error)
+    }
+})
+
+
+//remove item from cart
+// activating delete button at cart page
+router.delete("/remove/:id",athenicate,async(req,res)=>{
+    try {
+        const {id} = req.params;
+
+        req.rootUser.carts = req.rootUser.carts.filter((cruval)=>{
+            return cruval.id != id;
+        });
+
+        req.rootUser.save();
+        res.status(201).json(req.rootUser);
+        console.log("Item Removed");
+    } catch (error) {
+        console.log("error "+error);
+        res.status(400).json(req.rootUser);
+    }
+})
+
+// for user logout
+//token and cookie has to be removed - done using filter
+
+router.get("/logout", athenicate, async (req, res) => {
+    try {
+        req.rootUser.tokens = req.rootUser.tokens.filter((cureLem) => {
+            return cureLem.token !== req.token
+        });
+
+        res.clearCookie("Amazonweb", { path: "/" });
+        req.rootUser.save();
+        res.status(201).json(req.rootUser.tokens);
+        console.log("user logout");
+
+    } catch (error) {
+        console.log(error + " error for user logout");
+    }
+});
 
 module.exports = router;
