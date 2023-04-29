@@ -153,6 +153,26 @@ router.get("/cartdetails",athenicate,async(req,res)=>{
     }
 })
 
+
+
+router.put("/cartdetails",athenicate,async(req,res)=>{
+    try {
+        const UserContact = await USER.findOne({_id:req.userID});
+        console.log(UserContact);
+        if(UserContact){
+            const cartData = await UserContact.clearcartdata();
+            await UserContact.save();
+            console.log(cartData);
+            res.status(201).json(UserContact);
+        }else{
+            res.status(401).json({error:"invalid user"});
+        }
+
+    } catch (error) {
+        res.status(401).json({error:"invalid user"});
+    }
+})
+
 //get valid user
 
 router.get("/validuser",athenicate,async(req,res)=>{

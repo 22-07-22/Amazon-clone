@@ -89,6 +89,16 @@ userSchema.methods.addcartdata = async function(cart){
   }
 }
 
+userSchema.methods.clearcartdata = async function(){
+  try {
+    this.carts = [];
+    await this.save();
+    return this.carts
+  } catch (error) {
+    console.log(error);
+  }
+}
+
 
 
 const USER = new mongoose.model("USER", userSchema);

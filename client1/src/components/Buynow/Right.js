@@ -1,10 +1,13 @@
-import {React,useState,useEffect} from "react";
+import {React,useState,useEffect, useContext} from "react";
 import { NavLink } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import {LoginContext} from "../context/ContextProvider";
 
 
 const Right = ({iteam}) => {
+
+  const {account,setAccount} = useContext(LoginContext);
 
   const [price,setPrice] = useState(0);
 
@@ -23,12 +26,29 @@ const Right = ({iteam}) => {
     setPrice(price)
   }
 
-  const proceesby = ()=>{
+  const proceesby = async ()=>{
     // alert("Your Order is Confirmed");
     // history.push("/");
+
+
+    const res = await fetch("/cartdetails", {
+      method: "PUT",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      credentials: "include",
+    });
+
+    const data1 = await res.json();
+    
+    setAccount(data1);
+    
+
     toast.success("Your Order is Confirmed",{
       position: "top-center",
     })
+
 }
 
   return (
@@ -48,7 +68,7 @@ const Right = ({iteam}) => {
         <h3>Subtotal ({iteam.length} items): <strong style={{fontWeight:700,color:"#111"}}>₹{price}.00</strong></h3> 
         <NavLink to = "/"><button className="rightbuy_btn" onClick={proceesby}>Proceed to Buy</button> </NavLink>
         {/* <button className="rightbuy_btn" onClick={proceesby}>Proceed to Buy</button>  */}
-        
+
         <div className="emi">
           Thank You :)
         </div>
